@@ -302,7 +302,7 @@ def ask_parameters(pre_chick, pre_orient, pre_dlc, pre_video, pre_video2, pre_pr
     
     # print image
     imgg = Image.open("pictures/orientation.png")
-    imgg = imgg.resize((585, 222), Image.ANTIALIAS)
+    imgg = imgg.resize((585, 222), Image.LANCZOS)
     img = ImageTk.PhotoImage(imgg)
     panel =  tkinter.ttk.Label(frame, image = img)
     panel.grid(column=0, row=13, pady=10, padx=10, sticky=(tkinter.N))
@@ -403,7 +403,7 @@ def ask_parameters(pre_chick, pre_orient, pre_dlc, pre_video, pre_video2, pre_pr
     ninth_window_entry5.grid(column=1, row=4, pady=10, padx=10, sticky=(tkinter.N))
     
     imgg = Image.open("pictures/areas.png")
-    imgg = imgg.resize((int(963/1.2), int(339/1.2)), Image.ANTIALIAS)
+    imgg = imgg.resize((int(963/1.2), int(339/1.2)), Image.LANCZOS)
     img2 = ImageTk.PhotoImage(imgg)
     panel2 =  tkinter.ttk.Label(frame3, image = img2)
     panel2.grid(column=0, row=5, pady=10, padx=10, sticky=(tkinter.N))
@@ -425,7 +425,7 @@ def ask_parameters(pre_chick, pre_orient, pre_dlc, pre_video, pre_video2, pre_pr
     tenth_window_entry2.grid(column=1, row=7, pady=10, padx=10, sticky=(tkinter.N))
  
     imgg = Image.open("pictures/angle.png")
-    imgg = imgg.resize((176, 250), Image.ANTIALIAS)
+    imgg = imgg.resize((176, 250), Image.LANCZOS)
     img3 = ImageTk.PhotoImage(imgg)
     panel3 =  tkinter.ttk.Label(frame3, image = img3)
     panel3.grid(column=0, row=8, pady=10, padx=10, sticky=(tkinter.N))

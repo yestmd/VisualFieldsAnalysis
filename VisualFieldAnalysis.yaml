@@ -12,6 +12,7 @@
 # 2- open the terminal
 # 3- write "conda env create -f VisualFieldAnalysis.yaml" and press enter. It will take several minutes.
 # 4- when it is done, write "conda activate VisualFieldAnalysis"
+# EXTRA write "pip install pyimage openpyxl" 
 # 5- then write "spyder"
 # 6- open the file "main_coordinator" in spyder
 
@@ -28,4 +29,4 @@ dependencies:
   - pandas
   - numpy
   - xlrd
-  - pyimage
+  

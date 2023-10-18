@@ -302,7 +302,7 @@ def ask_parameters(pre_chick, pre_orient, pre_dlc, pre_video, pre_video2, pre_pr
     
     # print image
     imgg = Image.open("pictures/orientation.png")
-    imgg = imgg.resize((585, 222), Image.ANTIALIAS)
+    imgg = imgg.resize((585, 222), Image.LANCZOS)
     img = ImageTk.PhotoImage(imgg)
     panel =  tkinter.ttk.Label(frame, image = img)
     panel.grid(column=0, row=13, pady=10, padx=10, sticky=(tkinter.N))
